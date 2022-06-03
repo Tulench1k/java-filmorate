@@ -17,7 +17,7 @@ import java.util.Map;
 @RestController
 public class FilmController {
     private final Map<Integer, Film> films = new HashMap<>();
-    private int maxId;
+    private int maxId = 0;
 
     @GetMapping("/films")
     public Collection<Film> getFilms(HttpServletRequest request) {

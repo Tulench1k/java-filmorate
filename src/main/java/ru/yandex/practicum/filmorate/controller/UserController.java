@@ -14,9 +14,9 @@ import java.util.*;
 @Slf4j
 @RestController
 public class UserController {
-    private int maxId = 0;
 
     private final Map<Integer, User> users = new HashMap<>();
+    private int maxId = 0;
 
     @GetMapping("/users")
     public Collection<User> getUsers(HttpServletRequest request) {
