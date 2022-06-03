@@ -12,7 +12,7 @@ public class Validator {
             throw new EmptyNameException();
         } else if (film.getDescription().length() > 200) {
             throw new TooLongDescriptionException();
-        } else if (film.getReleaseDate().isBefore(LocalDate.of(1985, 12, 28))) {
+        } else if (film.getReleaseDate().isBefore(LocalDate.of(1895, 12, 28))) {
             throw new IncorrectDateException();
         } else if (film.getDuration() < 0) {
             throw new NegativeDurationException();

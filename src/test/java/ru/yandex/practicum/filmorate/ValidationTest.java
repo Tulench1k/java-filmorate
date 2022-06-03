@@ -111,7 +111,7 @@ public class ValidationTest {
         Film film = new Film(
                 "name",
                 "description",
-                LocalDate.of(1985, 12, 27),
+                LocalDate.of(1895, 12, 27),
                 90);
 
         IncorrectDateException e = Assertions.assertThrows(
