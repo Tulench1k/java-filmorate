@@ -19,7 +19,7 @@ public class InMemoryUserStorage implements UserStorage {
 
     @Override
     public User add(long id, User user) {
-        if (user != null && id > 0 && !userStorage.containsKey(id)) {
+        if (user != null && !userStorage.containsKey(id)) {
             userStorage.put(id, user);
         } else {
             if (id <= 0 || userStorage.containsKey(id)) {

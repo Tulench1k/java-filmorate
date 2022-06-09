@@ -19,7 +19,7 @@ public class InMemoryFilmStorage implements FilmStorage {
 
     @Override
     public Film add(long id, Film film) {
-        if (film != null && id > 0 && !filmStorage.containsKey(id)) {
+        if (film != null && !filmStorage.containsKey(id)) {
             filmStorage.put(id, film);
         } else {
             if (id <= 0 || filmStorage.containsKey(id)) {
