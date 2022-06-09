@@ -1,9 +1,9 @@
 package ru.yandex.practicum.filmorate.exception;
 
-public class UserValidationException extends RuntimeException {
+public class SameIdException extends RuntimeException {
     private final String message;
 
-    public UserValidationException(String message) {
+    public SameIdException(String message) {
         this.message = message;
     }
 
